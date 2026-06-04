@@ -5,5 +5,9 @@
     "express": "^5.2.1",
     "mongoose": "^9.6.3",
     "nodemailer": "^8.0.10"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
+
