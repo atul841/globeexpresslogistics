@@ -685,14 +685,14 @@
             <img src="assets/logos/l1.png" alt="Power Grid">
             <img src="assets/logos/l2.png" alt="CSIR NBRI">
             <img src="assets/logos/l3.avif" alt="Mandeep Industries">
-            <img src="assets/logos/l4.jpg" alt="ASI">
+            
             <img src="assets/logos/l5.avif" alt="Kothari Agritech">
             <img src="assets/logos/l6.jpg" alt="Goyal Kitchen">
-            <img src="assets/logos/l7.png" alt="KEC International">
+            
             <img src="assets/logos/l8.jpg" alt="Tingae Snacks">
             <img src="assets/logos/l9.jpg" alt="USHA">
-            <img src="assets/logos/l10.jpg" alt="Continental Electrical">
-            <img src="assets/logos/l11.jpeg" alt="UP State Bridge">
+            
+            
             <img src="assets/logos/l12.webp" alt="POCT Services">
             <img src="assets/logos/l13.avif" alt="Oadine Biotech">
             <img src="assets/logos/l14.png" alt="Asomo Healthcare">
@@ -708,14 +708,14 @@
             <img src="assets/logos/l1.png" alt="Power Grid">
             <img src="assets/logos/l2.png" alt="CSIR NBRI">
             <img src="assets/logos/l3.avif" alt="Mandeep Industries">
-            <img src="assets/logos/l4.jpg" alt="ASI">
+            
             <img src="assets/logos/l5.avif" alt="Kothari Agritech">
             <img src="assets/logos/l6.jpg" alt="Goyal Kitchen">
-            <img src="assets/logos/l7.png" alt="KEC International">
+            
             <img src="assets/logos/l8.jpg" alt="Tingae Snacks">
             <img src="assets/logos/l9.jpg" alt="USHA">
-            <img src="assets/logos/l10.jpg" alt="Continental Electrical">
-            <img src="assets/logos/l11.jpeg" alt="UP State Bridge">
+           
+           
             <img src="assets/logos/l12.webp" alt="POCT Services">
             <img src="assets/logos/l13.avif" alt="Oadine Biotech">
             <img src="assets/logos/l14.png" alt="Asomo Healthcare">
@@ -732,13 +732,10 @@
 </section> 
 
 <style>
-    
     .client-logos {
-    padding: 40px 0;
+    padding: 60px 0;
     background: #fff;
     overflow: hidden;
-}
-.client-logos{
     scroll-margin-top: 150px;
 }
 
@@ -756,19 +753,22 @@
     animation: moveRight 60s linear infinite;
 }
 
+/* Client Logos */
 .logo-track img {
-    height: 50px;
+    height: 80px;
     width: auto;
     object-fit: contain;
-    filter: grayscale(100%);
-    transition: all 0.3s ease;
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: all 0.4s ease;
+    padding: 8px;
 }
 
 .logo-track img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.08);
+    transform: translateY(-5px) scale(1.08);
 }
 
+/* Infinite Slider Animation */
 @keyframes moveRight {
     0% {
         transform: translateX(-50%);
@@ -779,30 +779,67 @@
     }
 }
 
+/* Section Heading */
+.clients-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.clients-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ff6600;
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .logo-track {
+        gap: 45px;
+    }
+
+    .logo-track img {
+        height: 70px;
+    }
+
+    .clients-title {
+        font-size: 36px;
+    }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+
+    .client-logos {
+        padding: 50px 0;
+    }
+
     .logo-track {
         gap: 30px;
     }
 
     .logo-track img {
-        height: 35px;
+        height: 55px;
+        padding: 5px;
     }
-}
 
-.clients-title{
-    font-size: 42px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #222;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+    .clients-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
 
-@media (max-width: 768px){
-    .clients-title{
-        font-size: 30px;
-        margin-bottom: 25px;
+    .clients-title::after {
+        width: 60px;
+        height: 3px;
     }
 }
 </style>
@@ -833,7 +870,7 @@
                                                     <span class="icon-star" aria-hidden="true"></span>
                                                     <span class="icon-star" aria-hidden="true"></span>
                                                     <span class="icon-star" aria-hidden="true"></span>
-                                                    <span class="icon-star last-star" aria-hidden="true"></span>
+                                                    <span class="icon-star" aria-hidden="true"></span>
                                                 </div>
                                                 <h3 class="testimonial-one__client-name">Ramesh Gupta</h3>
                                                 <p class="testimonial-one__client-sub-title">Business Owner, Lucknow</p>
@@ -851,7 +888,7 @@
                                                     <span class="icon-star" aria-hidden="true"></span>
                                                     <span class="icon-star" aria-hidden="true"></span>
                                                     <span class="icon-star" aria-hidden="true"></span>
-                                                    <span class="icon-star last-star" aria-hidden="true"></span>
+                                                    <span class="icon-star" aria-hidden="true"></span>
                                                 </div>
                                                 <h3 class="testimonial-one__client-name">Priya Sharma</h3>
                                                 <p class="testimonial-one__client-sub-title">Homeowner, Lucknow</p>
@@ -869,7 +906,7 @@
                                                     <span class="icon-star" aria-hidden="true"></span>
                                                     <span class="icon-star" aria-hidden="true"></span>
                                                     <span class="icon-star" aria-hidden="true"></span>
-                                                    <span class="icon-star last-star" aria-hidden="true"></span>
+                                                    <span class="icon-star" aria-hidden="true"></span>
                                                 </div>
                                                 <h3 class="testimonial-one__client-name">Anil Verma</h3>
                                                 <p class="testimonial-one__client-sub-title">Retailer, Transport Nagar</p>
@@ -1055,7 +1092,172 @@ document
     }
 
 });
-</script>
+</script> 
+ 
+
+<section class="fleet-section">
+    <div class="container">
+
+        <div class="fleet-heading">
+            <span>Our Fleet</span>
+
+            <h2>Right Vehicle for Every Load</h2>
+
+            
+        </div>
+
+        <div class="fleet-slider">
+            <div class="fleet-track">
+
+                <div class="fleet-card">
+                    <img src="trukimage/Pickup Vehicle.jpg" alt="Pickup Vehicle">
+                    <h4>Pickup Vehicle</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/Tata Ace.cms" alt="Tata Ace">
+                    <h4>Tata Ace (Chhota Hathi)</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/14 Feet Truck.jpeg" alt="14 Feet Truck">
+                    <h4>14 Feet Truck</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/17 Feet Truck.jpg" alt="17 Feet Truck">
+                    <h4>17 Feet Truck</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/19 Feet Truck.jpeg" alt="19 Feet Truck">
+                    <h4>19 Feet Truck</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/22 Feet Truck.jpg" alt="22 Feet Truck">
+                    <h4>22 Feet Truck</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/24 Feet Container.jpeg" alt="24 Feet Container">
+                    <h4>24 Feet Container</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/32 Feet SXL Container.jpg" alt="32 Feet SXL Container">
+                    <h4>32 Feet SXL Container</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/32 Feet MXL Container.png" alt="32 Feet MXL Container">
+                    <h4>32 Feet MXL Container</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/40 Feet Trailer.jpeg" alt="40 Feet Trailer">
+                    <h4>40 Feet Trailer</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/50 Feet Trailer.jpg" alt="50 Feet Trailer">
+                    <h4>50 Feet Trailer</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/Low Bed Trailer.jpg" alt="Low Bed Trailer">
+                    <h4>Low Bed Trailer</h4>
+                </div>
+
+                <div class="fleet-card">
+                    <img src="trukimage/ODC Trailer.jpg" alt="ODC Trailer">
+                    <h4>ODC Trailer</h4>
+                </div>
+
+                <!-- Duplicate Cards for Smooth Infinite Scroll -->
+
+                
+
+                
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<br> <br>
+<style>
+    .fleet-section{
+    padding:90px 0;
+    background:#111827;
+    overflow:hidden;
+}
+
+.fleet-heading{
+    text-align:center;
+    color:#fff;
+    margin-bottom:50px;
+}
+
+.fleet-heading span{
+    color:#ff7a00;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.fleet-heading h2{
+    color:#fff;
+    font-size:42px;
+    margin:15px 0;
+}
+
+.fleet-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#cfcfcf;
+}
+
+.fleet-slider{
+    overflow:hidden;
+}
+
+.fleet-track{
+    display:flex;
+    width:max-content;
+    animation:fleetScroll 25s linear infinite;
+}
+
+.fleet-card{
+    width:320px;
+    margin:0 15px;
+    border-radius:15px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.fleet-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.fleet-card h4{
+    text-align:center;
+    padding:20px;
+    margin:0;
+    font-size:18px;
+}
+
+@keyframes fleetScroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+</style>
         <!--Google Map Start-->
         <section class="google-map-one google-map-two" aria-label="Location map">
             <iframe
